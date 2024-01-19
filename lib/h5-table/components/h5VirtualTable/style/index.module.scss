@@ -1,0 +1,109 @@
+.virtualTable {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  font-size: 24px;
+}
+
+.fixedHeader {
+  // position: fixed;
+  z-index: 100;
+  min-width: 100%;
+}
+.table-header {
+  position: relative;
+  overflow: hidden;
+  font-size: 24px;
+}
+
+.fixed-title-mark {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  background-color: #fcfcfc;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -1px;
+    width: 10px;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: box-shadow 0.1s linear;
+  }
+}
+.first-column {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  background-color: #fff;
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -1px;
+    width: 10px;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: box-shadow 0.1s linear;
+  }
+  .table-row-column {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  .cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.first-column-move {
+  &::after {
+    box-shadow: 6px 0 8px -3px rgba(0, 0, 0, 0.15);
+  }
+}
+.table-content {
+  position: absolute;
+  top: 0;
+}
+.rowMarkContainer {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+}
+
+.fixed-title-more {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  z-index: 101;
+  background-color: #fcfcfc;
+
+  .mark {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    // background-color: transparent; /* 模块背景为透明 */
+
+    border-color: #999;
+
+    border-style: solid;
+
+    border-width: 5px 5px 0 0;
+    top: 30%;
+    left: 30%;
+
+    transform: rotate(45deg); /*箭头方向可以自由切换角度*/
+  }
+}

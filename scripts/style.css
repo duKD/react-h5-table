@@ -1,0 +1,292 @@
+@charset "UTF-8";._table-cell_i1lht_1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}._title_ylky1_1 {
+  display: flex;
+  font-size: 0.32rem;
+}
+._title_ylky1_1 ._table-row-column_ylky1_5 {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+}
+._title_ylky1_1 ._table-row-column_ylky1_5 ._table-caret-wrapper_ylky1_14 {
+  position: absolute;
+  right: 0;
+  width: 0.4rem;
+  height: 0.56rem;
+}
+._title_ylky1_1 ._table-row-column_ylky1_5 ._sort-caret_ylky1_20 {
+  border: 0.13333rem solid transparent;
+  width: 0;
+  height: 0;
+  left: 0;
+  position: absolute;
+}
+._title_ylky1_1 ._table-row-column_ylky1_5 ._ascending_ylky1_27 {
+  border-bottom-color: #c0c4cc;
+  top: 0;
+}
+._title_ylky1_1 ._table-row-column_ylky1_5 ._descending_ylky1_31 {
+  border-top-color: #c0c4cc;
+  bottom: 0;
+}
+._title_ylky1_1 ._table-row-column_ylky1_5 ._is-ascending_ylky1_35 ._ascending_ylky1_27 {
+  border-bottom-color: #309fea;
+}
+._title_ylky1_1 ._table-row-column_ylky1_5 ._is-descending_ylky1_38 ._descending_ylky1_31 {
+  border-top-color: #309fea;
+}
+._title_ylky1_1 ._first-table-row-column_ylky1_41 {
+  flex-grow: 0;
+}._table-row_1e4ej_1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+._table-row-column_1e4ej_6 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 0.01333rem solid #f4f4f4;
+}
+
+._first-table-row-column_1e4ej_16 {
+  flex-grow: 0;
+}
+
+._cell_1e4ej_20 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+._left_1e4ej_27 {
+  text-align: left;
+}
+
+._right_1e4ej_31 {
+  text-align: right;
+}
+
+._center_1e4ej_35 {
+  text-align: center;
+}
+._table_1n0a1_2 {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  font-size: 0.32rem;
+}
+
+._fixedHeader_1n0a1_10 {
+  z-index: 100;
+  min-width: 100%;
+}
+
+._table-header_1n0a1_15 {
+  position: relative;
+  overflow: hidden;
+  font-size: 0.32rem;
+}
+
+._fixed-title-mark_1n0a1_21 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  background-color: #fcfcfc;
+}
+._fixed-title-mark_1n0a1_21::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -0.01333rem;
+  width: 0.13333rem;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: box-shadow 0.1s linear;
+}
+
+._first-column_1n0a1_41 {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  background-color: #fff;
+}
+._first-column_1n0a1_41::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -0.01333rem;
+  width: 0.13333rem;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: box-shadow 0.1s linear;
+}
+._first-column_1n0a1_41 ._table-row-column_1n0a1_58 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 0.01333rem solid #f4f4f4;
+}
+._first-column_1n0a1_41 ._cell_1n0a1_67 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+._first-column-move_1n0a1_73::after {
+  box-shadow: 0.08rem 0 0.10667rem -0.04rem rgba(0, 0, 0, 0.15);
+}
+
+._loading_1n0a1_77 {
+  text-align: center;
+  height: 0.66667rem;
+  line-height: 0.66667rem;
+}
+
+._rowMarkContainer_1n0a1_83 {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+}
+
+._fixed-title-more_1n0a1_89 {
+  position: absolute;
+  right: 0;
+  width: 0.8rem;
+  z-index: 101;
+  background-color: #fcfcfc;
+}
+._fixed-title-more_1n0a1_89 ._mark_1n0a1_96 {
+  position: absolute;
+  height: 0.26667rem;
+  width: 0.26667rem;
+  border-color: #999;
+  border-style: solid;
+  border-width: 0.06667rem 0.06667rem 0 0;
+  top: 30%;
+  left: 30%;
+  transform: rotate(45deg); /*箭头方向可以自由切换角度*/
+}
+._virtualTable_rr830_2 {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  font-size: 0.32rem;
+}
+
+._fixedHeader_rr830_10 {
+  z-index: 100;
+  min-width: 100%;
+}
+
+._table-header_rr830_15 {
+  position: relative;
+  overflow: hidden;
+  font-size: 0.32rem;
+}
+
+._fixed-title-mark_rr830_21 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  background-color: #fcfcfc;
+}
+._fixed-title-mark_rr830_21::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -0.01333rem;
+  width: 0.13333rem;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: box-shadow 0.1s linear;
+}
+
+._first-column_rr830_41 {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  background-color: #fff;
+}
+._first-column_rr830_41::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -0.01333rem;
+  width: 0.13333rem;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: box-shadow 0.1s linear;
+}
+._first-column_rr830_41 ._table-row-column_rr830_58 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 0.01333rem solid #f4f4f4;
+}
+._first-column_rr830_41 ._cell_rr830_67 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+._first-column-move_rr830_73::after {
+  box-shadow: 0.08rem 0 0.10667rem -0.04rem rgba(0, 0, 0, 0.15);
+}
+
+._table-content_rr830_77 {
+  position: absolute;
+  top: 0;
+}
+
+._rowMarkContainer_rr830_82 {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+}
+
+._fixed-title-more_rr830_88 {
+  position: absolute;
+  right: 0;
+  width: 0.8rem;
+  z-index: 101;
+  background-color: #fcfcfc;
+}
+._fixed-title-more_rr830_88 ._mark_rr830_95 {
+  position: absolute;
+  height: 0.26667rem;
+  width: 0.26667rem;
+  border-color: #999;
+  border-style: solid;
+  border-width: 0.06667rem 0.06667rem 0 0;
+  top: 30%;
+  left: 30%;
+  transform: rotate(45deg); /*箭头方向可以自由切换角度*/
+}

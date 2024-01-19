@@ -1,0 +1,37 @@
+.table-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.table-row-column {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f4f4f4;
+}
+.first-table-row-column {
+  flex-grow: 0;
+}
+
+.cell {
+  width: 100%;
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}

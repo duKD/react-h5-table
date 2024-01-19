@@ -1,0 +1,45 @@
+.title {
+  display: flex;
+  font-size: 24px;
+
+  .table-row-column {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfc;
+
+    .table-caret-wrapper {
+      position: absolute;
+      right: 0;
+      width: 30px;
+      height: 42px;
+    }
+    .sort-caret {
+      border: 10px solid transparent;
+      width: 0;
+      height: 0;
+      left: 0;
+      position: absolute;
+    }
+    .ascending {
+      border-bottom-color: #c0c4cc;
+      top: 0;
+    }
+    .descending {
+      border-top-color: #c0c4cc;
+      bottom: 0;
+    }
+    .is-ascending .ascending {
+      border-bottom-color: #309fea;
+    }
+    .is-descending .descending {
+      border-top-color: #309fea;
+    }
+  }
+  .first-table-row-column {
+    flex-grow: 0;
+  }
+}
